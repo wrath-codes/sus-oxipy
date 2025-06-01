@@ -1,0 +1,8 @@
+[project]
+name = "sus-oxipy"
+version = "0.1.0"
+description = "Blazing fast library for processing files and wrangling data from the Brazilian Unified Health System (SUS)"
+authors = [{ name = "Raphael Vaz", email = "raphael@wrath.codes" }]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
