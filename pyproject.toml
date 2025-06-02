@@ -8,7 +8,14 @@ requires-python = ">=3.13"
 dependencies = []
 
 [dependency-groups]
-dev = ["polylith-cli>=1.28.0"]
+dev = [
+    "mkdocs>=1.6.1",
+    "mkdocs-gen-files>=0.5.0",
+    "mkdocs-literate-nav>=0.6.2",
+    "mkdocs-material>=9.6.14",
+    "mkdocs-section-index>=0.3.10",
+    "mkdocstrings-python",
+]
 
 # Hatch Configuration for Polylith
 [build-system]
@@ -17,3 +24,6 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build]
 dev-mode-dirs = ["components", "bases", "development", "."]
+
+[tool.uv.sources]
+mkdocstrings-python = { git = "https://github.com/pawamoy-insiders/mkdocstrings-python.git" }
