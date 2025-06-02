@@ -8,4 +8,12 @@ requires-python = ">=3.13"
 dependencies = []
 
 [dependency-groups]
-dev = []
+dev = ["polylith-cli>=1.28.0"]
+
+# Hatch Configuration for Polylith
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+dev-mode-dirs = ["components", "bases", "development", "."]
